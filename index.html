@@ -7,8 +7,8 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 		/>
+		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 		<link rel="stylesheet" href="css/index.css" />
-		<script src="js/index.js" defer></script>
 		<title>Habib Adebayo Portfolio</title>
 	</head>
 	<body>
@@ -19,7 +19,7 @@
 					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#skills">Skills</a></li>
-					<li><a href="#work">Work</a></li>
+					<li><a href="#projects">Work</a></li>
 					<li><a href="#contact">Contact</a></li>
 					<div class="nav-socials">
 						<a href="#"><i class="fab fa-facebook"></i></a>
@@ -30,14 +30,30 @@
 			</nav>
 			<i class="fa fa-bars"></i>
 		</header>
-		<section class="intro" id="home">
+		<section
+			class="intro"
+			id="home"
+			data-aos="fade-in"
+			data-aos-offset="200"
+			data-aos-delay="50"
+			data-aos-duration="1000"
+			data-aos-easing="ease-in-out"
+		>
 			<h1>Habib Adebayo</h1>
 			<p>
 				A frontend developer, who loves to create visually appealing website
 			</p>
 			<button>Hire me</button>
 		</section>
-		<section class="about" id="about">
+		<section
+			class="about"
+			id="about"
+			data-aos="fade-up"
+			data-aos-offset="200"
+			data-aos-delay="50"
+			data-aos-duration="1000"
+			data-aos-easing="ease-in-out"
+		>
 			<h1>About</h1>
 			<h6>
 				Hi 👋, I'm Habib, it's my pleasure connecting with you. Do well to check
@@ -51,10 +67,25 @@
 				Iure totam consectetur, dolores nam repudiandae sequi omnis.
 			</p>
 		</section>
-		<section class="skills" id="skills">
+		<section
+			class="skills"
+			id="skills"
+			data-aos="fade-up"
+			data-aos-offset="200"
+			data-aos-delay="50"
+			data-aos-duration="1000"
+			data-aos-easing="ease-in-out"
+		>
 			<h1>Skills</h1>
 			<p>I'm skilled in the following languages and tools:</p>
-			<div class="skills-list">
+			<div
+				class="skills-list"
+				data-aos="fade-in"
+				data-aos-offset="200"
+				data-aos-delay="50"
+				data-aos-duration="1000"
+				data-aos-easing="ease-in-out-quad"
+			>
 				<i class="fab fa-html5"></i>
 				<i class="fab fa-css3"></i>
 				<i class="fab fa-js"></i>
@@ -67,11 +98,28 @@
 				<i class="fab fa-bootstrap"></i>
 			</div>
 		</section>
-		<section class="projects" id="projects">
+		<section
+			class="projects"
+			id="projects"
+			data-aos="fade-up"
+			data-aos-offset="200"
+			data-aos-delay="50"
+			data-aos-duration="1000"
+			data-aos-easing="ease-in-out-quad"
+		>
 			<h1>Projects</h1>
 			<p>These are the projects I've worked on:</p>
+			<div class="projects-list"></div>
 		</section>
-		<section class="contact" id="contact">
+		<section
+			class="contact"
+			id="contact"
+			data-aos="fade-up"
+			data-aos-offset="200"
+			data-aos-delay="50"
+			data-aos-duration="1000"
+			data-aos-easing="ease-in-out-quad"
+		>
 			<h1>Contact</h1>
 			<p>Submit the form to get in touch with me</p>
 			<form>
@@ -95,5 +143,10 @@
 		<footer>
 			<p>Made with by <span>Habib Adebayo</span></p>
 		</footer>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+		<script src="js/index.js"></script>
 	</body>
 </html>
