@@ -51,6 +51,10 @@ projects.forEach(project => {
 	proj.innerHTML = `<img src="${project.img}" alt="${project.project_name}" load="lazy" />
 	 <h2>${project.project_name}</h2>
 	 <p>${project.description}</p>
+	 <div class="proj-links">
+	 <a href="${project.github_url}"><i class="fab fa-github"></i></a><a
+	 href="${project.url}"><i class="fa fa-link"></i></a>
+	 </div>
 	`;
 	projectsList.appendChild(proj);
 });

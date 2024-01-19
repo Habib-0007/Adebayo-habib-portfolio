@@ -44,30 +44,10 @@ nav {
 	display: block;
 }
 
-nav ul {
-	list-style: none;
-	display: none;
-	justify-content: space-between;
-	align-items: center;
-	flex-direction: row;
-	gap: 12px;
-	background: var(--blue);
-}
-
-nav ul.show {
-	display: flex;
-	background: var(--blue);
-	z-index: 999999;
-}
-
 nav ul li a {
 	text-decoration: none;
 	color: inherit;
 	font-size: 1.1em;
-}
-
-header i {
-	font-size: 1.5em;
 }
 
 .nav-socials {
@@ -374,6 +354,11 @@ footer p span {
 
 @media screen and (max-width: 767px) {
 	nav ul {
+		list-style: none;
+		display: none;
+		justify-content: space-between;
+		align-items: center;
+		gap: 12px;
 		background: var(--blue);
 		position: fixed;
 		top: 64px;
@@ -385,12 +370,23 @@ footer p span {
 		flex-direction: column;
 	}
 
+	nav ul.show {
+		display: flex;
+		background: var(--blue);
+		z-index: 999999;
+	}
+
 	nav ul li {
 		padding-block: 30px;
 	}
 
 	nav ul li a {
 		font-size: 24px;
+	}
+
+	header > i {
+		font-size: 1.5em;
+		display: block;
 	}
 
 	.nav-socials {
@@ -411,6 +407,20 @@ footer p span {
 @media screen and (min-width: 768px) {
 	nav {
 		display: block;
+	}
+
+	nav ul {
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
+		gap: 12px;
+		background: var(--blue);
+	}
+
+	header > i {
+		display: none;
 	}
 
 	.skills-list {
