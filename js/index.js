@@ -1,6 +1,7 @@
 var menuBtn = document.querySelector(".fa");
 var navLinks = document.querySelector(".navLinks");
 var projectsList = document.querySelector(".projects-list");
+var contactForm = document.getElementById("contact_form");
 
 var projects = [
 	{
@@ -73,3 +74,11 @@ var toggleNav = () => {
 menuBtn.addEventListener("click", toggleNav);
 
 menuBtn.addEventListener("click", toggleNav);
+
+contactForm.addEventListener("click", event => {
+	event.preventDefault();
+	emailjs.sendForm("contact_service", "contact_form", this).then(() =>
+	alert("Success"), err => {
+	  alert(`Failed ${err}`)
+	};
+});

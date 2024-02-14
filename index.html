@@ -8,6 +8,10 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 		/>
 		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+		></script>
 		<link rel="stylesheet" href="css/index.css" />
 		<title>Habib Adebayo Portfolio</title>
 	</head>
@@ -125,7 +129,7 @@
 		>
 			<h1>Contact</h1>
 			<p>Submit the form to get in touch with me</p>
-			<form>
+			<form id="contact_form">
 				<input id="name" type="text" placeholder="Enter your name" required />
 				<input id="email" type="text" placeholder="Enter your email" required />
 				<textarea id="message" placeholder="Enter your message"></textarea>
@@ -149,6 +153,7 @@
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script>
 			AOS.init();
+			emailjs.init("YOUR_PUBLIC_KEY");
 		</script>
 		<script src="js/index.js"></script>
 	</body>
