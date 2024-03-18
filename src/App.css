@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway");
+
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	font-family: "Raleway", sans-serif;
+}
+
+body {
+	--purple: #a729f5;
+	--correct-color: #26d782;
+	--text-color: #fff;
+	--bg-col: #000;
+	background: var(--bg-col);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	padding: 16px;
+	border-bottom: 1px solid var(--text-color);
+}
+
+header h1 {
+	color: var(--correct-color);
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	gap: 16px;
+	padding: 16px;
+}
+
+header nav.hide {
+	display: none;
+}
+
+header .menu-bar {
+	background: transparent;
+	color: var(--text-color);
+	font-size: 24px;
+	color: var(--purple);
+}
+
+.showcase {
+	display: flex;
+	justify-content: start;
+	align-items: stretch;
+	flex-direction: column;
+	gap: 2.5rem;
+	margin-top: 1.6rem;
+	color: var(--text-color);
+	padding: 16px;
+	height: 90vh;
+	border-bottom: 1px solid var(--text-color);
+}
+
+.showcase .rocket {
+	font-size: 4rem;
+	align-self: end;
+	margin-right: 2rem;
+}
+
+.showcase-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	flex-direction: column;
+	gap: 12px;
+	text-align: left;
+	margin-top: 50px;
+}
+
+.showcase-content small {
+	font-size: 1rem;
+}
+
+.showcase-content h1 {
+	font-size: 3rem;
+}
+.showcase-content strong {
+	font-size: 1.4rem;
+}
+
+.showcase-content p {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.showcase-content p span {
+	text-decoration: underline var(--correct-color);
+	font-weight: bold;
+}
+
+.showcase-content a {
+	display: block;
+	padding: 14px 22px;
+	border-radius: 30px;
+	color: var(--text-color);
+	background: var(--correct-color);
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	align-self: start;
+}
+
+.about {
+	color: var(--text-color);
+	padding: 16px;
+	border-bottom: 1px solid var(--text-color);
+}
+
+.about h1 {
+	text-align: left;
+	font-size: 1.3rem;
+	position: relative;
+}
+
+.about h1::after {
+	content: " ";
+	background: var(--correct-color);
+	width: 48px;
+	height: 4px;
+	position: absolute;
+	top: 30px;
+	left: 0px;
+}
+
+.about-content {
+	margin-top: 24px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	flex-direction: column;
+	gap: 12px;
+	padding: 2rem 0;
+}
+
+.about-content img {
+	width: 100%;
+}
+
+.about-content p {
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.skills {
+	color: var(--text-color);
+	padding: 16px;
+	border-bottom: 1px solid var(--text-color);
+}
+
+.skills h1 {
+	text-align: left;
+	font-size: 1.3rem;
+	position: relative;
+}
+
+.skills h1::after {
+	content: " ";
+	background: var(--correct-color);
+	width: 48px;
+	height: 4px;
+	position: absolute;
+	top: 30px;
+	left: 0px;
+}
+
+.skills-content {
+	margin-top: 24px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	width: 100%;
+	grid-gap: 20px;
+	padding: 2rem 0;
+}
+
+.skills-content div {
+	background: var(--text-color);
+	color: var(--bg-col);
+	padding: 10px 18px;
+	border-radius: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 12px;
+	font-size: 18px;
+	transition: all ease .5s;
+}
+
+.skills-content div:hover {
+	background: var(--correct-color);
+	color: var(--text-color);
+}
+
+@media screen and (max-width: 767px) {
+	header nav {
+		background: rgba(255, 255, 255, 0.4);
+		backdrop-filter: blur(20px);
+		-webkit-backdrop-filter: blur(20px);
+		position: absolute;
+		top: 60px;
+		width: calc(100% - 32px);
+		gap: 24px;
+		padding: 24px;
+		border-radius: 6px;
+	}
+
+	header nav a {
+		text-decoration: none;
+		color: var(--text-color);
+		font-size: 16px;
+		font-weight: bold;
+	}
+}
+
+@media screen and (min-width: 767px) {
+	header nav {
+		flex-direction: row;
+	}
+
+	header nav.hide {
+		display: flex;
+	}
+
+	header nav a {
+		text-decoration: none;
+		color: var(--text-color);
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	header .menu-bar {
+		display: none;
+	}
+
+	.showcase {
+		gap: 35%;
+	}
+
+	.showcase-content {
+		width: 60%;
+	}
+
+	.about-content {
+		flex-direction: row;
+	}
+
+	.about-content img {
+		align-self: center;
+	}
+
+	.skills-content {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}

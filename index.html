@@ -2,159 +2,18 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
 		/>
-		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-		<script
-			type="text/javascript"
-			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-		></script>
-		<link rel="stylesheet" href="css/index.css" />
-		<title>Habib Adebayo Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+		<title>Portfolio | Habib Adebayo</title>
 	</head>
 	<body>
-		<header>
-			<h1>Habib</h1>
-			<nav>
-				<ul class="navLinks">
-					<li><a href="#home">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#projects">Work</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<div class="nav-socials">
-						<a href="#"><i class="fab fa-facebook"></i></a>
-						<a href="#"><i class="fab fa-github"></i></a>
-						<a href="#"><i class="fab fa-twitter"></i></a>
-					</div>
-				</ul>
-			</nav>
-			<i class="fa fa-bars"></i>
-		</header>
-		<section
-			class="intro"
-			id="home"
-			data-aos="fade-in"
-			data-aos-offset="200"
-			data-aos-delay="50"
-			data-aos-duration="1000"
-			data-aos-easing="ease-in-out"
-		>
-			<h1>Habib Adebayo</h1>
-			<p>
-				A frontend developer, who loves to create visually appealing website.
-			</p>
-			<button>Hire me</button>
-		</section>
-		<section
-			class="about"
-			id="about"
-			data-aos="fade-up"
-			data-aos-offset="200"
-			data-aos-delay="50"
-			data-aos-duration="1000"
-			data-aos-easing="ease-in-out"
-		>
-			<h1>About</h1>
-			<img src="./images/Habib.webp" alt="myImage" />
-			<h6>
-				Hi 👋, I'm Habib, it's my pleasure connecting with you. Do well to check
-				my projects
-			</h6>
-			<p>
-				I'm a passionate frontend developer with a keen eye for design and a
-				love for creating seamless user experiences. Proficient in HTML, CSS,
-				and JavaScript, I strive to bring ideas to life through clean,
-				responsive, and visually appealing web applications. Dedicated to
-				staying updated with the latest industry trends and technologies to
-				deliver cutting-edge solutions. Let's build a digital experience that
-				not only meets but exceeds expectations.
-			</p>
-		</section>
-		<section
-			class="skills"
-			id="skills"
-			data-aos="fade-up"
-			data-aos-offset="200"
-			data-aos-delay="50"
-			data-aos-duration="1000"
-			data-aos-easing="ease-in-out"
-		>
-			<h1>Skills</h1>
-			<p>I'm skilled in the following languages and tools:</p>
-			<div
-				class="skills-list"
-				data-aos="fade-in"
-				data-aos-offset="200"
-				data-aos-delay="50"
-				data-aos-duration="1000"
-				data-aos-easing="ease-in-out-quad"
-			>
-				<i class="fab fa-html5"></i>
-				<i class="fab fa-css3"></i>
-				<i class="fab fa-js"></i>
-				<i class="fab fa-react"></i>
-				<i class="fab fa-python"></i>
-				<i class="fab fa-less"></i>
-				<i class="fab fa-sass"></i>
-				<i class="fab fa-git"></i>
-				<i class="fab fa-github"></i>
-				<i class="fab fa-bootstrap"></i>
-			</div>
-		</section>
-		<section
-			class="projects"
-			id="projects"
-			data-aos="fade-up"
-			data-aos-offset="200"
-			data-aos-delay="50"
-			data-aos-duration="1000"
-			data-aos-easing="ease-in-out-quad"
-		>
-			<h1>Projects</h1>
-			<p>These are the projects I've worked on:</p>
-			<div class="projects-list"></div>
-		</section>
-		<section
-			class="contact"
-			id="contact"
-			data-aos="fade-up"
-			data-aos-offset="200"
-			data-aos-delay="50"
-			data-aos-duration="1000"
-			data-aos-easing="ease-in-out-quad"
-		>
-			<h1>Contact</h1>
-			<p>Submit the form to get in touch with me</p>
-			<form id="contact_form">
-				<input id="name" type="text" placeholder="Enter your name" required />
-				<input id="email" type="text" placeholder="Enter your email" required />
-				<textarea id="message" placeholder="Enter your message"></textarea>
-				<button>Submit</button>
-			</form>
-			<div class="contact-rem">
-				<h6>
-					Contact me at
-					<a href="mailto:adebayohabib7@gmail.com">adebayohabib7@gmail.com</a>
-				</h6>
-				<div class="contact-socials">
-					<a href="#"><i class="fab fa-facebook"></i></a>
-					<a href="#"><i class="fab fa-github"></i></a>
-					<a href="#"><i class="fab fa-twitter"></i></a>
-				</div>
-			</div>
-		</section>
-		<footer>
-			<p>Made with by <span>Habib Adebayo</span></p>
-		</footer>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script>
-			AOS.init();
-			emailjs.init("YOUR_PUBLIC_KEY");
-		</script>
-		<script src="js/index.js"></script>
+		<div id="root"></div>
+		<script
+			type="module"
+			src="/src/main.tsx"
+		></script>
 	</body>
 </html>
